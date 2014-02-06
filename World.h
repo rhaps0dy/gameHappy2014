@@ -5,7 +5,11 @@
 #include "utils.h"
 
 #include "Player.h"
+#ifdef NO_MALLOC_H
+#include <stdlib.h>
+#else
 #include <malloc.h>
+#endif
 #include <SDL_mixer.h>
 
 

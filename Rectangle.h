@@ -1,7 +1,11 @@
 #ifndef _Rectangle_h_
 #define _Rectangle_h_
 
+#ifdef NO_MALLOC_H
+#include <stdlib.h>
+#else
 #include <malloc.h>
+#endif
 #include "utils.h"
 
 /*Classe que es fa servir per guardar la posició real dels sprites*
